@@ -70,6 +70,7 @@ const registrarse = () => {
                                     value={formik.values.nombre}
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
+                                        required
                                 />
                                 {formik.touched.nombre && formik.errors.nombre ? (
                                     <div className='text-white'>
@@ -88,6 +89,7 @@ const registrarse = () => {
                                     value={formik.values.email}
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
+                                        required
                                 />
                                 {formik.touched.email && formik.errors.email ? (
                                     <div className='text-white'>
@@ -102,6 +104,8 @@ const registrarse = () => {
                                 <input type="password"
                                     className='input input-bordered text-white  w-full max-w-xs'
                                     id='password'
+                                        minlength="8"
+                                        required
                                     placeholder='Contraseña'
                                     value={formik.values.password}
                                     onChange={formik.handleChange}
@@ -124,7 +128,7 @@ const registrarse = () => {
                                     value={formik.values.edad}
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
-
+                                    required
                                 />
                                 {formik.touched.edad && formik.errors.edad ? (
                                     <div className='text-white'>
@@ -143,7 +147,7 @@ const registrarse = () => {
                                     value={formik.values.ubicacion}
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
-
+                                        required
                                 />
                                 {formik.touched.ubicacion && formik.errors.ubicacion ? (
                                     <div className='text-white'>
@@ -158,6 +162,7 @@ const registrarse = () => {
                                 < input type="file" className='file-input text-white file-input-bordered w-full max-w-xs'
                                     id='foto'
                                     name='foto'
+                                        required
                                     onChange={(event) => {
                                         formik.setFieldValue("foto", event.currentTarget.files[0])
                                     }}
