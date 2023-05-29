@@ -5,7 +5,7 @@ import { Layout } from '@/components/Layout'
 import authContext from '@/context/auth/authContext'
 
 
-const URI = "http://localhost:8080/product"
+const URI = "https://server-coder-app-production.up.railway.app/product"
 const MostrarProductos = () => {
 
 const AuthContext = useContext(authContext)

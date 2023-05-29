@@ -5,7 +5,7 @@ import axios from "axios";
 import Login from "../login";
 
 
-const URI = "http://localhost:8080/email"
+const URI = "https://server-coder-app-production.up.railway.app/email"
 
 const Cart = () => {
 
