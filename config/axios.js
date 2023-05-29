@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const clienteAxios = axios.create({
-    baseURL: "https://server-coder-app-production.up.railway.app/"
+    baseURL: "https://server-coder-app-production.up.railway.app"
 
 });
 
