@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 import { Layout } from '@/components/Layout'
 import authContext from '@/context/auth/authContext'
 
-
-const URI = "https://server-coder-app-production.up.railway.app/product"
+//"https://server-coder-app-production.up.railway.app/product"
+const URI = "http://localhost:8080/product"
 const MostrarProductos = () => {
 
 const AuthContext = useContext(authContext)

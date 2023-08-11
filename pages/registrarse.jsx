@@ -60,11 +60,11 @@ const registrarse = () => {
                    
                 <div className='flex justify-center mt-5'>
                     <div className='w-full max-w-lg'>
-                        <form onSubmit={formik.handleSubmit} className='glass rounded shadow-xl px-8 pt-6 pb-8 mb-4' method='POST' encType='multipart/form-data'>
+                        <form onSubmit={formik.handleSubmit} className='text-sky-900  text-lg  rounded shadow-xl px-8 pt-6 pb-8 mb-4' method='POST' encType='multipart/form-data'>
                             <div className='mb-4'>
-                                <label className='block text-white text-sm font-bold mb-2' htmlFor='nombre'>Nombre de Usuario</label>
+                                <label className='block text-sky-900  text-lg font-bold mb-2' htmlFor='nombre'>Nombre de Usuario</label>
                                 <input type="text"
-                                    className='input text-white bordered w-full max-w-xs'
+                                    className='h-10 w-24 bordered w-full max-w-xs p-4 rounded-lg shadow-lg text-white'
                                     id='nombre'
                                     placeholder='Nombre de Usuario'
                                     value={formik.values.nombre}
@@ -81,9 +81,9 @@ const registrarse = () => {
 
                             </div>
                             <div className='mb-4'>
-                                <label className='block text-white  text-sm font-bold mb-2' htmlFor='email'>Email</label>
+                                <label className='block text-sky-900  text-lg  font-bold mb-2' htmlFor='email'>Email</label>
                                 <input type="text"
-                                    className='input input-bordered text-white  w-full max-w-xs'
+                                    className='h-10 w-24 bordered w-full max-w-xs p-4 rounded-lg shadow-lg text-white'
                                     id='email'
                                     placeholder='Correo'
                                     value={formik.values.email}
@@ -100,9 +100,9 @@ const registrarse = () => {
 
                             </div>
                             <div className='mb-4'>
-                                <label className='block text-white text-sm font-bold mb-2' htmlFor='password'>Contraseña</label>
+                                <label className='block text-sky-900  text-lg  font-bold mb-2' htmlFor='password'>Contraseña</label>
                                 <input type="password"
-                                    className='input input-bordered text-white  w-full max-w-xs'
+                                    className='h-10 w-24 bordered w-full max-w-xs p-4 rounded-lg shadow-lg text-white'
                                     id='password'
                                         minlength="8"
                                         required
@@ -120,9 +120,9 @@ const registrarse = () => {
                                 ) : null}
                             </div>
                             <div className='mb-4'>
-                                <label className='block text-white text-sm font-bold mb-2' htmlFor='nombre'>Edad</label>
+                                <label className='block text-sky-900  text-lg font-bold mb-2' htmlFor='nombre'>Edad</label>
                                 <input type="text"
-                                    className='input text-white input-bordered w-full max-w-xs'
+                                    className='h-10 w-24 bordered w-full max-w-xs p-4 rounded-lg shadow-lg text-white'
                                     id='edad'
                                     placeholder='Edad'
                                     value={formik.values.edad}
@@ -139,9 +139,9 @@ const registrarse = () => {
 
                             </div>
                             <div className='mb-4'>
-                                <label className='block text-white text-sm font-bold mb-2' htmlFor='nombre'>Ubicacion</label>
+                                <label className='block text-sky-900  text-lg font-bold mb-2' htmlFor='nombre'>Ubicacion</label>
                                 <input type="text"
-                                    className='input input-bordered text-white w-full max-w-xs'
+                                    className='h-10 w-24 bordered w-full max-w-xs p-4 rounded-lg shadow-lg text-white'
                                     id='ubicacion'
                                     placeholder='Ubicacion'
                                     value={formik.values.ubicacion}
@@ -158,7 +158,7 @@ const registrarse = () => {
 
                             </div>
                             <div className='mb-4'>
-                                <label className='block text-white text-sm font-bold mb-2' htmlFor='foto'>Foto</label>
+                                <label className='block text-sky-900  text-lg  font-bold mb-2' htmlFor='foto'>Foto</label>
                                 < input type="file" className='file-input text-white file-input-bordered w-full max-w-xs'
                                     id='foto'
                                     name='foto'
@@ -178,7 +178,7 @@ const registrarse = () => {
                                 }
 
                             </div>
-                                <button type='submit' className='btn px-16 bg-sky-900 glass hover:bg-sky-600' >Enviar</button>
+                                <button type='submit' className='btn px-16 bg-sky-900 glass hover:text-white hover:bg-sky-600' >Enviar</button>
 
                         </form>
                     </div>

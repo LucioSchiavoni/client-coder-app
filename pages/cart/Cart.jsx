@@ -3,9 +3,9 @@ import React, { useState, useContext } from "react";
 import authContext from "@/context/auth/authContext";
 import axios from "axios";
 import Login from "../login";
-
-
-const URI = "https://server-coder-app-production.up.railway.app/email"
+ //"https://server-coder-app-production.up.railway.app/email"
+"http://localhost:8080"
+const URI = "http://localhost:8080/email"
 
 const Cart = () => {
 
